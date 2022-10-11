@@ -1,0 +1,98 @@
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+/* Custom properties */
+:root {
+  /* fonts */
+  --ff-sans: 'Bai Jamjuree', sans-serif;
+  /* font sizes */
+  /* - Font size (body): 16px, 18px, 20px
+     - Font size (headings): 46px, 36px, 32px, 28px, 24px, 
+  */
+  /* heading font sizes: */
+  --fs-750: 2.875rem;
+  --fs-700: 2.25rem;
+  --fs-650: 2rem;
+  --fs-600: 1.75rem;
+  --fs-550: 1.5rem;
+  /* body font sizes: */
+  --fs-500: 1.25rem;
+  --fs-450: 1.125rem;
+  --fs-400: 1rem;
+
+  /* font weights */
+  --fw-600: 600;
+  --fw-400: 400;
+  /* colors */
+  --clr-white: hsla(0, 0%, 100%, 1);
+  /* headings: */
+  --clr-dark-gray-blue: hsla(210, 10%, 33%, 1);
+  /* body - primary */
+  --clr-gray-blue: hsla(201, 11%, 66%, 1);
+  --clr-primary-cyan: hsla(171, 66%, 44%, 1);
+  --clr-primary-blue: hsla(233, 100%, 69%, 1);
+
+}
+
+/*  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* General Styles */
+body {
+  min-height: 100vh;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+  background-color: var(--clr-white);
+  color: var(--clr-dark-gray-blue);
+}
+
+
+/* attribution styles (optional) */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
