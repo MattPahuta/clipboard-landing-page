@@ -83,6 +83,7 @@ h6 {
 /* General Styles */
 body {
   min-height: 100vh;
+  display: grid;
   justify-content: center;
   /* overflow-x: hidden; */
   font-family: var(--ff-sans);
@@ -90,6 +91,16 @@ body {
   line-height: 1.6;
   background-color: var(--clr-white);
   color: var(--clr-dark-gray-blue);
+}
+
+/* Components */
+
+.container {
+  max-width: 1110px;
+}
+
+.button-container {
+  max-width: 470px;
 }
 
 
