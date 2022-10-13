@@ -90,7 +90,62 @@ body {
   font-size: var(--fs-400);
   line-height: 1.6;
   background-color: var(--clr-white);
+  color: var(--clr-gray-blue);
+}
+
+.page-header {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
   color: var(--clr-dark-gray-blue);
+  font-weight: var(--fw-600);
+  line-height: 1.25;
+}
+
+h1, h2 {
+  letter-spacing: -0.5px;
+}
+
+p {
+  letter-spacing: 0.12px;
+}
+
+/* Typopography */
+
+.page-header h1 {
+  font-size: var(--fs-650);
+}
+
+h2 {
+  font-size: var(--fs-600);
+}
+
+h3 {
+  font-size: var(--fs-550);
+  letter-spacing: -0.4px;
+}
+
+.nav-link {
+  font-size: var(--fs-450);
+  letter-spacing: 0.14px;
+} 
+
+@media (min-width: 46em) {
+  .page-header h1 {
+    font-size: var(--fs-750);
+    letter-spacing: -0.75px;
+  }
+
+  h2 {
+    font-size: var(--fs-700);
+    letter-spacing: -0.6px;
+  }
+
+  .primary-body-text {
+    font-size: var(--fs-450);
+    letter-spacing: 0.14px;
+  }
 }
 
 /* Components */
@@ -101,6 +156,26 @@ body {
 
 .button-container {
   max-width: 470px;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--fs-450);
+  line-height: 1.65;
+  letter-spacing: 0.5px;
+  color: var(--clr-white);
+  border: none;
+  border-radius: 28px;
+  padding: .85rem 2.875rem;
+}
+
+.btn-ios {
+  background-color: var(--clr-primary-cyan);
+}
+
+.btn-mac {
+  background-color: var(--clr-primary-blue);
 }
 
 
