@@ -83,12 +83,13 @@ h6 {
 /* General Styles */
 body {
   min-height: 100vh;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   /* overflow-x: hidden; */
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   line-height: 1.6;
+  text-align: center;
   background-color: var(--clr-white);
   color: var(--clr-gray-blue);
 }
@@ -115,6 +116,7 @@ p {
 
 .page-header h1 {
   font-size: var(--fs-650);
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -152,33 +154,93 @@ h3 {
 
 .container {
   max-width: 1110px;
+  padding: 0 2rem;
 }
+
+/* attribution styles (optional) */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 
 .button-container {
   max-width: 470px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .btn {
   cursor: pointer;
   font-family: inherit;
   font-size: var(--fs-450);
+  font-weight: 600;
   line-height: 1.65;
   letter-spacing: 0.5px;
   color: var(--clr-white);
   border: none;
   border-radius: 28px;
-  padding: .85rem 2.875rem;
+  padding: .75em 2.875em;
 }
 
 .btn-ios {
   background-color: var(--clr-primary-cyan);
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
 .btn-mac {
   background-color: var(--clr-primary-blue);
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
+/* header styles */
+.page-header {
+  padding: 123px 32px 160px;
+  background-image: url('../images/bg-header-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 
-/* attribution styles (optional) */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+}
+
+/* .header-bg {
+  background-image: url('../images/bg-header-mobile.png');
+} */
+
+.header-logo {
+  /* may not need width */
+  width: 125px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.page-header p {
+  margin-bottom: 3rem;
+}
+
+.cta-primary {
+
+}
+
+@media (min-width: 46em) {
+  .page-header {
+    background-image: url('../images/bg-header-desktop.png');
+  }
+}
+
+/* General Styles */
+
+.features-overview h2,
+.mobile-features-overview h2 {
+  margin-bottom: 1rem;
+}
+
+.features-overview p,
+.mobile-features-overview p {
+  margin-bottom: 4rem;
+}
+
+.desktop-demo-img {
+  margin-bottom: 3.5rem;
+}
+
+/* Footer Styles */
