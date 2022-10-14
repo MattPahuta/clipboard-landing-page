@@ -12,7 +12,6 @@
 </head>
 <body>
 
-
   <header class="page-header">
     <div class="cta-primary">
       <img src="./images/logo.svg" alt="Clipboard brand logo" class="header-logo">
@@ -26,9 +25,8 @@
     </div>
   </header>
 
-
   <main class="container">
-    <section id="product-features__overview">
+    <section id="product-features__overview" class="product-features__overview">
 
       <div class="features-overview">
         <h2>Keep track of your snippets</h2>
@@ -40,10 +38,8 @@
         <div class="features-sidebar">
           <h3>Quick Search</h3>
           <p>Easily search your snippets by content, category, web address, application, and more.</p>
-        
           <h3>iCloud Sync</h3>
           <p>Instantly saves and syncs snippets across all your devices.</p>
-        
           <h3>Complete History</h3>
           <p>Retrieve any snippets from the first moment you started using the app.</p>
         </div>
@@ -60,44 +56,53 @@
       </div>
     </section>
 
-    <section id="product-features__detail">
-      <div class="section-container">
-        <h2>Supercharge your workflow</h2>
-        <p class="primary-body-text">We've got the tools to boost your productivity.</p>
-        <!-- feature cards -->
-        <div class="features-icon-cards">
-          <div class="feature-card">
-            <img src="./images/icon-blacklist.svg" alt="">
-            <h3>Create blacklists</h3>
-            <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-          </div>
-          <div class="feature-card">
-            <img src="./images/icon-text.svg" alt="">
-            <h3>Plain text snippets</h3>
-            <p>Remove unwanted formatting from copied text for a consistent look.</p>
-          </div>
-          <div class="feature-card">
-            <img src="./images/icon-preview.svg" alt="">
-            <h3>Sneak preview</h3>
-            <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-          </div>
-        </div>
-      </div>
+    <section id="product-features__detail" class="product-features__detail">
+      <h2>Supercharge your workflow</h2>
+      <p class="primary-body-text">We've got the tools to boost your productivity.</p>
+      <!-- feature cards -->
+      <ul class="features-icon-cards">
+        <li class="feature-card">
+          <img src="./images/icon-blacklist.svg" alt="">
+          <h3>Create blacklists</h3>
+          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </li>
+        <li class="feature-card">
+          <img src="./images/icon-text.svg" alt="">
+          <h3>Plain text snippets</h3>
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </li>
+        <!-- keep this card centers when in-between mobile/desktop - Scrimba flexbox? -->
+        <li class="feature-card">
+          <img src="./images/icon-preview.svg" alt="">
+          <h3>Sneak preview</h3>
+          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+        </li>
+      </ul>
     </section>
 
     <section class="client-brands section-container">
-      <img src="./images/logo-google.png" alt="" class="client-brand-logo">
-      <img src="./images/logo-ibm.png" alt="" class="client-brand-logo">
-      <img src="./images/logo-microsoft.png" alt="" class="client-brand-logo">
-      <img src="./images/logo-hp.png" alt="" class="client-brand-logo">
-      <img src="./images/logo-vector-graphics.png" alt="" class="client-brand-logo">
+      <ul class="client-list">
+        <li class="client-list-item">
+          <img src="./images/logo-google.png" alt="" class="client-brand-logo"></li>
+        <li class="client-list-item">
+          <img src="./images/logo-ibm.png" alt="" class="client-brand-logo">
+        </li>
+        <li class="client-list-item">
+          <img src="./images/logo-microsoft.png" alt="" class="client-brand-logo">
+        </li>
+        <li class="client-list-item">
+          <img src="./images/logo-hp.png" alt="" class="client-brand-logo">
+        </li>
+        <li class="client-list-item">
+          <img src="./images/logo-vector-graphics.png" alt="" class="client-brand-logo">
+        </li>
+      </ul>
     </section>
 
     <section class="cta cta-secondary">
-      <div class="cta-secondary__inner">
-        <h2>Clipboard for iOS and Mac OS</h2>
-        <p class="primary-body-text">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
-      </div>
+      <h2>Clipboard for iOS and Mac OS</h2>
+      <p class="primary-body-text">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
+
       <div class="button-container">
         <button class="btn btn-ios">Download for iOS</button>
         <button class="btn btn-mac">Download for Mac</button>
@@ -106,11 +111,11 @@
   </main>
 
 
-  <footer>
+  <footer class="page-footer">
     <div class="footer-container">
-      <img src="./images/logo.svg" alt="Clipboard logo">
+      <img src="./images/logo.svg" alt="Clipboard logo" class="logo logo-footer">
       <nav class="navigation footer-nav">
-        <ul>
+        <ul class="nav-list">
           <li><a class="nav-link" href="#">FAQs</a></li>
           <li><a class="nav-link" href="#">Contact Us</a></li>
           <li><a class="nav-link" href="#">Privacy Policy</a></li>
@@ -118,10 +123,19 @@
           <li><a class="nav-link" href="#">Install Guide</a></li>
         </ul>
       </nav>
-      <div class="social-container">
-        <!-- try mask method to handle styling svg icons - highlight and cite (css tricks) in Readme -->
-        <ul class="social-list"></ul>
-      </div>
+      <!-- try mask method to handle styling svg icons - highlight and cite (css tricks) in Readme -->
+      <!-- add sr-only utility class -->
+      <ul class="social-list">
+        <li>
+          <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/icon-instagram.svg" alt=""></a>
+        </li>
+      </ul>
     </div>
   </footer>
 
