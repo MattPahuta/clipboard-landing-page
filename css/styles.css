@@ -422,63 +422,52 @@ h3 {
 /* Footer Styles */
 .page-footer {
   background: var(--clr-gray-blue-bg);
-
+  padding-inline: 1.5em;
 }
-
-
 
 .footer-container {
   max-width: 1110px;
   margin-inline: auto;
   padding: 3.25rem 0;
 
-
   place-items: center;
-
+  gap: 2.875em;
   grid-template-areas: 
-    "footer-main"
+    "logo-footer"
+    "footer-nav"
     "social";
 
 }
 
-.footer-main {
-	/* display: flex;
-	align-items: center;
-	flex-direction: column; */
-
-  justify-items: center;
-  grid-area: footer-main;
-}
-
 .logo-footer {
   width: 55px;
-  margin-bottom: 2.5rem;
+  grid-area: logo-footer;
 }
 
 .footer-nav {
-  margin-bottom: 3.125rem;
-
+  grid-area: footer-nav;
 }
 
 .nav-list,
 .social-list {
   padding: 0;
   list-style: none;
-  /* display: flex; */
 }
+
 
 .nav-list {
-  display: grid;
-  place-items: center;
+  flex-direction: column;
   gap: 1.25rem;
 }
 
-
-
-/* .nav-list {
+.nav-divider {
   flex-direction: column;
   gap: 1.25rem;
-} */
+}
+
+.nav-list-item {
+  white-space: nowrap;
+}
 
 .nav-link {
   text-decoration: none;
@@ -488,23 +477,28 @@ h3 {
 .social-list {
   width: 160px;
   justify-content: space-between;
-
   grid-area: social;
 }
 
 @media (min-width: 46em) {
 
+  .footer-container {
+    grid-template-columns: repeat(4, minmax(4rem, 1fr));
+    grid-template-areas: 
+    "logo-footer footer-nav footer-nav footer-nav"
+    ". social social .";
+
+    row-gap: 5rem;
+  }
+
   .footer-nav {
-    /* text-align: left; */
+    min-width: 500px;
   }
 
   .nav-list {
-    /* flex-direction: row;
-    flex-wrap: wrap;
-    text-align: left; */
-    grid-template-columns: repeat(2, 1fr);
-    place-items: baseline;
-  }
+    flex-direction: row;
+    justify-content: space-evenly;
+  } 
 
   .nav-list-item {
     text-align: left;
@@ -514,7 +508,10 @@ h3 {
 @media (min-width: 58em) {
 
   .footer-container {
-
+    grid-template-columns: repeat(6, minmax(4rem, 1fr));
+    grid-template-areas: 
+    "logo-footer footer-nav footer-nav footer-nav . social";
+    justify-items: start;
   }
 
   .footer-main {
@@ -522,15 +519,12 @@ h3 {
     justify-content: space-between;
   }
 
-  .footer-nav {
-    max-width: 500px;
+  .nav-list {
+    justify-content: flex-start;
   }
 
-  .nav-list {
-    /* flex-direction: row;
-    flex-wrap: wrap;
-    text-align: left; */
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
+  .nav-list-item {
+    min-width: 160px;
   }
   
   .social-list {
