@@ -303,6 +303,18 @@ h3 {
 .desktop-demo-img {
   /* max-width: 752px; */
   margin-bottom: 3.5rem;
+
+  /* move to media query? */
+  width: 100%;
+  object-fit: cover;
+}
+
+.features {
+  place-items: center;
+}
+
+.features-sidebar {
+  max-width: 350px;
 }
 
 .mobile-devices-img {
@@ -332,6 +344,15 @@ h3 {
 }
 
 @media (min-width: 46em) {
+  .features {
+    padding-inline: 2.5rem;
+
+  }
+
+  .features-sidebar {
+    margin-inline: auto;
+  }
+
   .product-features__detail > p {
     margin-bottom: 4.5rem;
   }
@@ -340,6 +361,33 @@ h3 {
     max-width: 60ch;
     margin-inline: auto;
     margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 58em) {
+  .features {
+    padding-inline: 0;
+    place-items: center;
+    grid-template-columns: 68% 32%;
+    column-gap: 6.875rem;
+    position: relative;
+    left: -20%;
+  }
+
+  .desktop-demo-img {
+    margin-bottom: 0;
+    /* height: 15vh; */
+  }
+
+  .features-sidebar {
+    margin-inline: 0;
+    text-align: left;
+
+  }
+
+  .features-sidebar > p {
+    margin-bottom: 3.5rem;
+
   }
 }
 
