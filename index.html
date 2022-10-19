@@ -16,13 +16,13 @@
       <img src="./images/logo.svg" alt="Clipboard brand logo" class="header-logo">
       <h1>A history of everything you copy</h1>
       <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-        <!-- use Steph Eckles button guidance to add additional styles -->
       <div class="button-container">
         <button class="btn btn-ios">Download for iOS</button>
         <button class="btn btn-mac">Download for Mac</button>
       </div>
     </div>
   </header>
+
   <main class="container">
     <section id="product-features__overview" class="product-features__overview">
       <div class="features-overview">
@@ -41,6 +41,7 @@
         </div>
       </div>
     </section>
+
     <section id="product-features__mobile">
       <div class="mobile-features-overview">
         <h2>Access Clipboard anywhere</h2>
@@ -49,47 +50,54 @@
         <img src="./images/image-devices.png" alt="" class="mobile-devices-img">
       </div>
     </section>
-    <section id="product-features__detail" class="product-features__detail">
-      <h2>Supercharge your workflow</h2>
-      <p class="primary-body-text">We've got the tools to boost your productivity.</p>
-      <!-- feature cards -->
-      <ul class="feature-cards-list">
-        <li class="feature-card">
-          <img src="./images/icon-blacklist.svg" alt="">
-          <h3>Create blacklists</h3>
-          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-        </li>
-        <li class="feature-card">
-          <img src="./images/icon-text.svg" alt="">
-          <h3>Plain text snippets</h3>
-          <p>Remove unwanted formatting from copied text for a consistent look.</p>
-        </li>
-        <!-- keep this card centers when in-between mobile/desktop - Scrimba flexbox? -->
-        <li class="feature-card">
-          <img src="./images/icon-preview.svg" alt="">
-          <h3>Sneak preview</h3>
-          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-        </li>
-      </ul>
+
+    <section class="product-features-details">
+      <!-- changed from section to div -->
+      <div id="product-features__detail" class="product-features__detail">
+        <h2>Supercharge your workflow</h2>
+        <p class="primary-body-text">We've got the tools to boost your productivity.</p>
+        <!-- feature cards -->
+        <ul class="feature-cards-list">
+          <li class="feature-card">
+            <img src="./images/icon-blacklist.svg" alt="">
+            <h3>Create blacklists</h3>
+            <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          </li>
+          <li class="feature-card">
+            <img src="./images/icon-text.svg" alt="">
+            <h3>Plain text snippets</h3>
+            <p>Remove unwanted formatting from copied text for a consistent look.</p>
+          </li>
+          <!-- keep this card centers when in-between mobile/desktop - Scrimba flexbox? -->
+          <li class="feature-card">
+            <img src="./images/icon-preview.svg" alt="">
+            <h3>Sneak preview</h3>
+            <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+          </li>
+        </ul>
+      </div>
+      <!-- changed from section to div -->
+      <div class="client-brands">
+        <ul class="brand-list">
+          <li class="client-list-item">
+            <img src="./images/logo-google.png" alt="" class="client-brand-logo"></li>
+          <li class="client-list-item">
+            <img src="./images/logo-ibm.png" alt="" class="client-brand-logo">
+          </li>
+          <li class="client-list-item">
+            <img src="./images/logo-microsoft.png" alt="" class="client-brand-logo">
+          </li>
+          <li class="client-list-item">
+            <img src="./images/logo-hp.png" alt="" class="client-brand-logo">
+          </li>
+          <li class="client-list-item">
+            <img src="./images/logo-vector-graphics.png" alt="" class="client-brand-logo">
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="client-brands section-container">
-      <ul class="brand-list">
-        <li class="client-list-item">
-          <img src="./images/logo-google.png" alt="" class="client-brand-logo"></li>
-        <li class="client-list-item">
-          <img src="./images/logo-ibm.png" alt="" class="client-brand-logo">
-        </li>
-        <li class="client-list-item">
-          <img src="./images/logo-microsoft.png" alt="" class="client-brand-logo">
-        </li>
-        <li class="client-list-item">
-          <img src="./images/logo-hp.png" alt="" class="client-brand-logo">
-        </li>
-        <li class="client-list-item">
-          <img src="./images/logo-vector-graphics.png" alt="" class="client-brand-logo">
-        </li>
-      </ul>
-    </section>
+
+
     <section class="cta cta-secondary">
       <h2>Clipboard for iOS and Mac OS</h2>
       <p class="primary-body-text">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard.</p>
@@ -99,24 +107,21 @@
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
     <div class="footer-container grid">
       <img src="./images/logo.svg" alt="Clipboard logo" class="logo logo-footer">
+      
       <nav class="navigation footer-nav">
         <ul class="nav-list flex">
-          <div class="nav-divider flex">
-            <li class="nav-list-item"><a class="nav-link" href="#">FAQs</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="#">Contact Us</a></li>
-          </div>
-          <div class="nav-divider flex">
-            <li class="nav-list-item"><a class="nav-link" href="#">Privacy Policy</a></li>
-            <li class="nav-list-item"><a class="nav-link" href="#">Press Kit</a></li>
-          </div>     
-          <div class="nav-divider flex">
-            <li class="nav-list-item"><a class="nav-link" href="#">Install Guide</a></li>
-          </div>
+          <li class="nav-list-item footer-faq"><a class="nav-link" href="#">FAQs</a></li>
+          <li class="nav-list-item footer-contact"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-list-item footer-privacy"><a class="nav-link" href="#">Privacy Policy</a></li>
+          <li class="nav-list-item footer-press"><a class="nav-link" href="#">Press Kit</a></li>
+          <li class="nav-list-item footer-install"><a class="nav-link" href="#">Install Guide</a></li>
         </ul>
       </nav>
+
       <ul class="social-list flex">
         <li>
           <a class="social-link" href="#">

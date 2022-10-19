@@ -367,6 +367,7 @@ h3 {
   gap: 1.25rem;
 }
 
+/* remove this */
 .nav-divider {
   flex-direction: column;
   gap: 1.25rem;
@@ -511,16 +512,21 @@ svg:is(:hover, :focus){
     grid-template-areas: 
     "logo-footer footer-nav footer-nav footer-nav"
     ". social social .";
+
     row-gap: 5rem;
   }
 
   .footer-nav {
-    min-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
   }
 
   .nav-list {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 350px;
   } 
 
   .nav-list-item {
@@ -568,11 +574,31 @@ svg:is(:hover, :focus){
   }
 
   .nav-list {
-    justify-content: flex-start;
+    max-width: 100%;
   }
 
   .nav-list-item {
     min-width: 160px;
+  }
+
+  .footer-faq {
+    order: 1;
+  }
+
+  .footer-contact {
+    order: 4;
+  }
+
+  .footer-privacy {
+    order: 2;
+  }
+
+  .footer-press {
+    order: 5;
+  }
+
+  .footer-install {
+    order: 3;
   }
   
   .social-list {
