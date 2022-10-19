@@ -149,29 +149,6 @@ h3 {
   letter-spacing: 0.14px;
 } 
 
-/* @media (min-width: 45em) {
-  .page-header h1 {
-    font-size: var(--fs-750);
-    letter-spacing: -0.75px;
-  }
-
-  .cta-primary > p {
-    margin-inline: auto;
-    font-size: var(--fs-500);
-    max-width: 55ch;
-  }
-
-  h2 {
-    font-size: var(--fs-700);
-    letter-spacing: -0.6px;
-  }
-
-  .primary-body-text {
-    font-size: var(--fs-450);
-    letter-spacing: 0.14px;
-  }
-} */
-
 /* Components */
 .container {
   max-width: 1110px;
@@ -219,24 +196,12 @@ h3 {
   opacity: 0.8
 }
 
-/* @media (min-width: 45em) {
-  .container {
-    padding: 0;
-  }
-
-  .button-container {
-    flex-direction: row;
-  }
-
-} */
-
 /* header styles */
 .page-header {
   padding: 123px 32px 160px;
   background-image: url('../images/bg-header-mobile.png');
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .header-logo {
@@ -249,12 +214,6 @@ h3 {
 .page-header p {
   margin-bottom: 3rem;
 }
-
-/* @media (min-width: 45em) {
-  .page-header {
-    background-image: url('../images/bg-header-desktop.png');
-  }
-} */
 
 /* General Styles */
 .product-features__overview {
@@ -278,8 +237,6 @@ h3 {
 
 .desktop-demo-img {
   margin-bottom: 3.5rem;
-
-  /* move to media query? */
   width: 100%;
   object-fit: cover;
 }
@@ -317,53 +274,6 @@ h3 {
 .product-features__detail > p {
   margin-bottom: 5.625rem;
 }
-
-/* @media (min-width: 45em) {
-  .features {
-    padding-inline: 2.5rem;
-
-  }
-
-  .features-sidebar {
-    margin-inline: auto;
-  }
-
-  .product-features__detail > p {
-    margin-bottom: 4.5rem;
-  }
-
-  .features-overview > p {
-    max-width: 60ch;
-    margin-inline: auto;
-    margin-bottom: 5rem;
-  }
-} */
-
-/* @media (min-width: 58em) {
-  .features {
-    padding-inline: 0;
-    place-items: center;
-    grid-template-columns: 68% 32%;
-    column-gap: 6.875rem;
-    position: relative;
-    left: -20%;
-  }
-
-  .desktop-demo-img {
-    margin-bottom: 0;
-  }
-
-  .features-sidebar {
-    margin-inline: 0;
-    text-align: left;
-
-  }
-
-  .features-sidebar > p {
-    margin-bottom: 3.5rem;
-
-  }
-} */
 
 /* Features Icon Cards and Client Brand List Styles */
 
@@ -410,27 +320,6 @@ h3 {
   max-width: 140px;
 }
 
-/* @media (min-width: 45em) {
-  .feature-cards-list {
-    gap: 1.875rem;
-  }
-
-  .product-features__detail,
-  .client-brands {
-    margin-bottom: 9.375rem;
-  }
-  
-  .mobile-features-overview > p {
-    margin-inline: auto;
-    margin-bottom: 6.875rem;
-    max-width: 58ch;
-  }
-
-  .client-brand-logo {
-    max-width: 100%;
-  }
-} */
-
 /* Bottom (secondary) CTA section styles */
 .cta-secondary {
   padding-bottom: 10.625rem;
@@ -439,16 +328,6 @@ h3 {
 .cta-secondary > p {
   margin-bottom: 3rem;
 }
-
-/* @media (min-width: 45em) {
-  .cta-secondary {
-    padding-bottom: 9.375rem;
-  }
-  .cta-secondary > p {
-    max-width: 60ch;
-    margin-inline: auto;
-  }
-} */
 
 /* Footer Styles */
 .page-footer {
@@ -466,7 +345,6 @@ h3 {
     "logo-footer"
     "footer-nav"
     "social";
-
 }
 
 .logo-footer {
@@ -523,57 +401,6 @@ svg:is(:hover, :focus){
 }
 
 
-/* @media (min-width: 45em) {
-
-  .footer-container {
-    grid-template-columns: repeat(4, minmax(4rem, 1fr));
-    grid-template-areas: 
-    "logo-footer footer-nav footer-nav footer-nav"
-    ". social social .";
-    row-gap: 5rem;
-  }
-
-  .footer-nav {
-    min-width: 500px;
-  }
-
-  .nav-list {
-    flex-direction: row;
-    justify-content: space-evenly;
-  } 
-
-  .nav-list-item {
-    text-align: left;
-  }
-} */
-
-/* @media (min-width: 58em) {
-
-  .footer-container {
-    grid-template-columns: repeat(6, minmax(4rem, 1fr));
-    grid-template-areas: 
-    "logo-footer footer-nav footer-nav footer-nav . social";
-    justify-items: start;
-  }
-
-  .footer-main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-list {
-    justify-content: flex-start;
-  }
-
-  .nav-list-item {
-    min-width: 160px;
-  }
-  
-  .social-list {
-    max-width: 120px;
-  }
-} */
-
 /* ======================================================== */
 /* =========== Consolidated Media Queries ================= */
 /* ======================================================== */
@@ -615,7 +442,6 @@ svg:is(:hover, :focus){
   /* Features sections */
   .features {
     padding-inline: 2.5rem;
-
   }
 
   .features-sidebar {
@@ -721,7 +547,6 @@ svg:is(:hover, :focus){
   .features-sidebar {
     margin-inline: 0;
     text-align: left;
-
   }
 
   .features-sidebar > p {
