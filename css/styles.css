@@ -293,7 +293,7 @@ h3 {
 }
 
 .brand-list {
-	max-width: 90%;
+	max-width: 75%;
 	margin-inline: auto;
 }
 
@@ -393,11 +393,11 @@ h3 {
   grid-area: social;
 }
 
-svg {
+.social-icon {
   fill: var(--clr-dark-gray-blue);
 }
 
-svg:is(:hover, :focus){
+.social-icon:is(:hover, :focus){
   fill: var(--clr-primary-cyan);
 }
 
@@ -557,7 +557,10 @@ svg:is(:hover, :focus){
 
   .features-sidebar > p {
     margin-bottom: 3.5rem;
+  }
 
+  .brand-list {
+    max-width: 90%;
   }
 
   /* Footer */
