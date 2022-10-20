@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9/hub/responsive-landing-page-built-with-css-grid-and-flexbox-RR3R_kiVIX)
 - Live Site URL: [Vercel-hosted demo site](https://clipboard-landing-page-eta-sable.vercel.app/)
 
 ## My process
